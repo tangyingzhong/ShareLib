@@ -1,5 +1,5 @@
-#ifndef IFONTT_H
-#define IFONTT_H
+#ifndef LIBXL_IFONTT_H
+#define LIBXL_IFONTT_H
 
 #include "setup.h"
 #include "enum.h"
@@ -32,6 +32,8 @@ namespace libxl {
 
         virtual const TCHAR* XLAPIENTRY name() const = 0;
         virtual         bool XLAPIENTRY setName(const TCHAR* name) = 0;
+
+        virtual                         ~IFontT() {}
     };
 
 }
